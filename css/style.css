@@ -1,0 +1,23 @@
+@import url(sanitize.css);/* どのブラウザでもフォントスタイルを同じにする */
+h1{
+    font-size: 24px; 
+    margin: 0;
+}
+div.content{
+    background-color: #fcc;/*ffccccの略*/
+    width: 600px;
+    margin: 100px auto;
+    border: 1px solid #d1d1d1;/* 枠線の太さ,ボーダーのスタイル,ボーダーの色 */
+    border-width: 1px;
+    /* margin: 10px 20px 30px 40px; 上　右　下　左　時計回り　ショートハンドプロパティ  */
+    /* margin: 10px 20px（右と左） 30px; */
+    /* margin: 10px（上と下） 20px（右と左） ; */
+    /* margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px; */
+  
+}
+p{
+    font-size: 14px;
+}

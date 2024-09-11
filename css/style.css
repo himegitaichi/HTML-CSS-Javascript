@@ -6,9 +6,10 @@ h1{
 div.content{
     background-color: #fcc;/*ffccccの略*/
     width: 600px;
-    margin: 100px auto;
+    margin: 10px auto;
     border: 1px solid #d1d1d1;/* 枠線の太さ,ボーダーのスタイル,ボーダーの色 */
-    border-width: 1px;
+    padding: 8px;
+    /* border-width: 1px; */
     /* margin: 10px 20px 30px 40px; 上　右　下　左　時計回り　ショートハンドプロパティ  */
     /* margin: 10px 20px（右と左） 30px; */
     /* margin: 10px（上と下） 20px（右と左） ; */
@@ -18,6 +19,20 @@ div.content{
     margin-bottom: 10px; */
   
 }
-p{
-    font-size: 14px;
+
+input{
+    border: none;
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 16px;/*決まり文句*/
+    padding: 8px;
+}
+
+button{
+    width: 100%;
+    background-color: #2096f3;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px rgba(0,0,0,1);
 }

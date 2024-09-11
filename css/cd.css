@@ -12,6 +12,7 @@ header h1{/* 子孫セレクタ */
     background-color: #422814;
     padding: 10px;
     color: #f0f0f0;
+    font-family: Arial;
 
 }
 
@@ -21,11 +22,102 @@ h1{
     font-size: 24px;
     font-weight: normal;
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .container{
     width: 800px;
     margin: 0 auto;
     box-shadow: 0 0 100px rgba(0,0,0,.3);
+}
+
+.information{
+    display: flex;
+    align-items: center;
+}
+
+.information h1{
+    font-size: 18px;
+    padding: 2px 3px;
+
+
+}
+
+.description img{
+
+    margin: 0 10px 10px 0;
+}
+
+
+.type{
+    background-color: #e35a4d;
+    padding: 3px 5px;
+    color: #f0f0f0;
+    font-size: .8em;
+}
+
+
+
+.songs{
+    clear: both;
+}
+
+a{
+    color: #666;
+}
+
+.songs ol{
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    display: grid;
+    grid-template-columns: 1fr 1fr;/* １つの行を1対1で分けるという意味 */
+}
+
+.songs h2{
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    background-color: #e6e4dd;
+    padding: 5px 10px;
+}
+
+.songs li{
+    border-bottom: 1px solid #ccc;
+    padding:  5px 10px;
+
+}
+
+footer{
+    text-align: center;
+    font-size: .8em;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px){
+    .description img{
+        float: none;
+        margin: 10px auto;
+        display: block;
+    }
+
+    header{
+        padding: 5px;
+    }
+
+    header h1{
+        font-size: 12px;
+    }
+
+    .information h1{
+        font-size: 14px;
+    }
+
+    .songs ol{
+        display: block;
+    }
+
+    
 }
 

@@ -45,8 +45,12 @@ h1{
 }
 
 .description img{
-
+    float: left;
     margin: 0 10px 10px 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
 
 
@@ -95,6 +99,10 @@ footer{
     padding: 5px;
 }
 
+.description img:hover{/* 画像にカーソルを合わせたときに透明になる */
+    opacity: .5;
+}
+
 @media screen and (max-width: 600px){
     .description img{
         float: none;
@@ -118,6 +126,6 @@ footer{
         display: block;
     }
 
-    
+
 }
 

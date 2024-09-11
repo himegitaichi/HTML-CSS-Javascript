@@ -1,14 +1,20 @@
 @import url(sanitize.css);/* どのブラウザでもフォントスタイルを同じにする */
+
+body {
+    background-color: #666;
+
+}
+
 h1{
     font-size: 24px; 
     margin: 0;
 }
-div.content{
+.content{
     background-color: #fcc;/*ffccccの略*/
     width: 600px;
     margin: 10px auto;
     border: 1px solid #d1d1d1;/* 枠線の太さ,ボーダーのスタイル,ボーダーの色 */
-    padding: 8px;
+    padding: 30px;
     /* border-width: 1px; */
     /* margin: 10px 20px 30px 40px; 上　右　下　左　時計回り　ショートハンドプロパティ  */
     /* margin: 10px 20px（右と左） 30px; */
@@ -25,6 +31,7 @@ input{
     border-bottom: 1px solid #d1d1d1;
     font-size: 16px;/*決まり文句*/
     padding: 8px;
+    width: 100%;
 }
 
 button{
@@ -35,4 +42,18 @@ button{
     padding: 15px;
     border-radius: 3px;
     box-shadow: 0 0 8px rgba(0,0,0,1);
+}
+
+label{
+    display: block;
+    margin-bottom: .5em;
+}
+
+span.required{
+    background-color: #fee;
+    color: #f33;
+    padding: 3px;
+    font-size: .9em;
+    font-weight: bold;
+    margin-left: .3em;
 }

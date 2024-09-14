@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+<body>
+    <script>
+        let dice;
+
+        do{
+            dice = Math.floor(Math.random() * 6) + 1;
+            document.write(dice + " ");
+        }while(dice !== 1);//条件にかかわらず1回は実行する．whileは1回も実行されないことがある
+
+        for(let i=0; i<=100; i++){
+            dice = Math.floor(Math.random() * 6) + 1;
+
+            if(dice === 1){
+                continue;//これ以降の処理はせず次のループへ
+            }
+
+            document.write(dice);
+        }
+    </script>
+</body>
+</html>

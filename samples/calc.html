@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript入門</title>
+</head>
+<body>
+    <script>
+        /* const num1 = window.prompt('1つめの数字をいれて');
+        const num2 = window.prompt('2つめの数字をいれて');
+
+        const sum = Number(num1) + Number(num2);
+
+        document.write(num1 + '+' + num2 + '=' + sum); */
+
+        /* const today = new Date();
+        const newyear = new Date(2024,0,1);
+        document.write(today.getFullYear() + '年'
+            + (today.getMonth() + 1　+ '月' 
+            + today.getDate() + '日'));
+
+        document.write('<br>');
+        document.write(newyear.getMonth() + 1); */
+
+        /* const price = 123;
+        const intax = Math.round(price * 1.1);
+        document.write(intax);
+
+        document.write("<br>");
+        document.write(Math.ceil(10.1));
+        document.write("<br>");
+        document.write(Math.floor(10.5)); */
+
+
+        const calcInTax = (price) => {
+            const intax = Math.round(price*1.1);
+            return intax;
+        }
+
+        /* const 関数名 = (受け取るパラメーター) => {
+            処理
+            ．．．
+            return 戻り値
+        } */
+
+        const price =1231231;
+        const intax = calcInTax(price);
+        const item2 = calcInTax(2000);
+        document.write(intax);
+        document.write("<br>");
+        document.write(item2);
+        
+
+    </script>
+</body>
+</html>
